@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-[87.5%];
+
+    @apply md:text-[93.75%];
+
+    @apply lg:text-[100%];
+  }
+
+  body {
+    @apply bg-gray-50;
+  }
+
+  body,
+  input,
+  textarea,
+  button {
+    @apply font-medium text-base font-Inter text-gray-500;
+  }
+
+  h1 {
+    @apply text-[2rem];
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold font-Lexend text-gray-600;
+  }
+}
+
+@layer components {
+  .episodesTable {
+    th,
+    td {
+      @apply border-b border-solid border-b-gray-100;
+    }
+
+    th {
+      @apply py-3 px-4 text-gray-400 uppercase font-medium text-xs font-Lexend text-left;
+    }
+
+    td:not(:first-child) {
+      @apply text-sm py-3 px-4;
+    }
+  }
+
+  .pChild {
+    p {
+      @apply my-6;
+    }
+  }
+}
